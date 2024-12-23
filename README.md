@@ -137,7 +137,7 @@
   </details>
 
 <details>
-<summary>7. Що таке CSS?</summary>
+<summary>7. У чому різниця між margin і padding?</summary>
 
 - Різниця між margin і padding:
 
@@ -264,5 +264,5 @@
 <details>
 <summary>10. </summary>
 
-- CSS (Cascading Style Sheets) — це мова стилів, яка використовується для опису зовнішнього вигляду веб-сторінок, створених за допомогою HTML або XML.
+- coming soon...
 </details>
