@@ -22,3 +22,72 @@
 - Зовнішні стилі — у CSS-файлах, підключених через `<link rel=”stylesheet” href=”styles.css”>` або `@import`.
 
 </details>
+
+<details>
+<summary>4. Що таке CSS-селектори? Наведіть приклади.</summary>
+
+- CSS-селектори використовуються для вибору HTML-елементів, до яких застосовуються стилі.
+
+- **Приклади:**
+
+  - За тегом: `h1 { color: red; }`
+  - За класом: `.button { background: blue; }`
+  - За ID: `#header { padding: 10px; }`
+
+- **Комбіновані:**
+
+  - Дочірні: `ul > li { margin: 5px; }`
+  - Нащадки: `div p { font-size: 14px; }`
+  - Атрибути: `[type="text"] { border: 1px solid gray; }`
+
+- **Псевдокласи:**
+
+  - `a:hover { color: green; }`
+  - `:nth-child(2) { font-weight: bold; }`
+
+- **Псевдоелементи:**
+
+  - `p::first-line { text-transform: uppercase; }`
+
+</details>
+
+<details>
+<summary>5. Як працює наслідування в CSS?</summary>
+
+- Наслідування в CSS дозволяє деяким властивостям автоматично передаватися від батьківського елемента до дочірніх.
+
+- **Особливості:**
+
+1. Автоматично наслідуються тільки текстові та декоративні властивості:
+
+- `color`, `font`, `visibility`, `line-height` тощо.
+
+2. Не наслідуються автоматично властивості, що впливають на коробку (box model):
+
+- `margin`, `padding`, `border`, `width`, `heigh`t тощо.
+
+- **Контроль наслідування:**
+
+1. **Примусове наслідування:** використовуйте значення inherit.
+
+   ```css
+   p {
+     border: inherit;
+   }
+   ```
+
+2. **Відміна наслідування:** значення initial скидає властивість до початкового (згідно стандарту).
+
+   ```css
+   p {
+     color: initial;
+   }
+   ```
+
+</details>
+
+<details>
+
+<summary>6. </summary>
+
+</details>
