@@ -4872,7 +4872,34 @@ filter: grayscale(50%) blur(2px);
 </details>
 
 <details>
-<summary>122. ???</summary>
+<summary>122. Як створити сіткову систему за допомогою CSS Grid?</summary>
+
+#### CSS
+
+1. Створюю контейнер з display: grid.
+
+2. Визначаю колонки та рядки через grid-template-columns / grid-template-rows
+   (можна з fr, auto, %).
+
+3. Додаю проміжки (gap).
+
+4. Для адаптивності — змінюю налаштування через @media або repeat(auto-fit,
+   minmax()).
+
+#### Приклад:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+```
+
+</details>
+
+<details>
+<summary>123. ???</summary>
 
 #### CSS
 
