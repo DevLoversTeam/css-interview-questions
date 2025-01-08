@@ -4964,7 +4964,41 @@ filter: grayscale(50%) blur(2px);
 </details>
 
 <details>
-<summary>125. ???</summary>
+<summary>125. Як додати таблицю стилів для друку на вебсторінці?</summary>
+
+#### CSS
+
+- Створюють окремі стилі з медіатипом print:
+
+**_Через окремий файл:_**
+
+```html
+<link rel="stylesheet" href="print.css" media="print" />
+```
+
+**_Або всередині CSS:_**
+
+```css
+@media print {
+  body {
+    color: black;
+    background: white;
+  }
+
+  nav,
+  footer {
+    display: none;
+  }
+}
+```
+
+- Використовується для спрощення макета, видалення непотрібних елементів і
+  оптимізації читабельності при друку.
+
+</details>
+
+<details>
+<summary>126. ???</summary>
 
 #### CSS
 
