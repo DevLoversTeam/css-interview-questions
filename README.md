@@ -5019,7 +5019,33 @@ filter: grayscale(50%) blur(2px);
 </details>
 
 <details>
-<summary>127. ???</summary>
+<summary>127. Як використовувати розрив сторінки в CSS для друку?</summary>
+
+#### CSS
+
+- Розрив сторінки в CSS керується властивостями page-break-before,
+  page-break-after, page-break-inside (застарілі) або їх новими аналогами —
+  break-before, break-after, break-inside.
+
+#### Приклад:
+
+```css
+h2 {
+  break-before: page; /* Почати з нової сторінки при друку */
+}
+
+section {
+  break-inside: avoid; /* Не розривати всередині секції */
+}
+```
+
+- Використовується у друкованих стилях, щоб контролювати, де сторінка має
+  ділитися.
+
+</details>
+
+<details>
+<summary>128. ???</summary>
 
 #### CSS
 
