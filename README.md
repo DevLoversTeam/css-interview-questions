@@ -4941,7 +4941,7 @@ filter: grayscale(50%) blur(2px);
 </details>
 
 <details>
-<summary>124. Як забезпечити доступність і інклюзивність вебдизайну?</summary>
+<summary>125. Як забезпечити доступність і інклюзивність вебдизайну?</summary>
 
 #### CSS
 
@@ -4964,7 +4964,7 @@ filter: grayscale(50%) blur(2px);
 </details>
 
 <details>
-<summary>125. Як додати таблицю стилів для друку на вебсторінці?</summary>
+<summary>126. Як додати таблицю стилів для друку на вебсторінці?</summary>
 
 #### CSS
 
@@ -4998,7 +4998,7 @@ filter: grayscale(50%) blur(2px);
 </details>
 
 <details>
-<summary>126. Які best practices при створенні CSS для друку?</summary>
+<summary>127. Які best practices при створенні CSS для друку?</summary>
 
 #### CSS
 
@@ -5019,7 +5019,7 @@ filter: grayscale(50%) blur(2px);
 </details>
 
 <details>
-<summary>127. Як використовувати розрив сторінки в CSS для друку?</summary>
+<summary>128. Як використовувати розрив сторінки в CSS для друку?</summary>
 
 #### CSS
 
@@ -5045,7 +5045,7 @@ section {
 </details>
 
 <details>
-<summary>128. Як протестувати версію вебсторінки для друку?</summary>
+<summary>129. Як протестувати версію вебсторінки для друку?</summary>
 
 #### CSS
 
@@ -5063,7 +5063,7 @@ section {
 </details>
 
 <details>
-<summary>129. Які типові проблеми виникають при розробці CSS для друку?</summary>
+<summary>130. Які типові проблеми виникають при розробці CSS для друку?</summary>
 
 #### CSS
 
@@ -5084,7 +5084,7 @@ section {
 </details>
 
 <details>
-<summary>130. ???</summary>
+<summary>131. ???</summary>
 
 #### CSS
 
