@@ -5045,7 +5045,25 @@ section {
 </details>
 
 <details>
-<summary>128. ???</summary>
+<summary>128. Як протестувати версію вебсторінки для друку?</summary>
+
+#### CSS
+
+- Тестують версію для друку так:
+
+  - У браузері відкрити Print Preview (Ctrl+P / Cmd+P).
+
+  - У DevTools вибрати emulate print media (Chrome: More tools → Rendering →
+    Emulate CSS media: print).
+
+  - Перевірити відображення в різних браузерах (Chrome, Firefox, Edge).
+
+  - За потреби протестувати на реальному принтері або PDF-експортері.
+
+</details>
+
+<details>
+<summary>129. ???</summary>
 
 #### CSS
 
