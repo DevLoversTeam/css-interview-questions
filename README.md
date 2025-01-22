@@ -5129,7 +5129,54 @@ a:hover {
 </details>
 
 <details>
-<summary>133. ???</summary>
+<summary>133. У чому різниця між :nth-child та :nth-of-type у CSS?</summary>
+
+#### CSS
+
+- `:nth-child(n)` — вибирає елемент, якщо він є n-м дочірнім серед усіх
+  елементів батька.
+
+- `:nth-of-type(n)` — вибирає елемент, якщо він є n-м дочірнім серед елементів
+  того ж типу.
+
+#### Приклад:
+
+```css
+p:nth-child(2)      /* другий дочірній елемент, неважливо, p це чи ні */
+p:nth-of-type(2)    /* другий <p> серед усіх <p> */
+```
+
+</details>
+
+<details>
+<summary>134. Як працюють псевдокласи :first-child і :last-child у CSS?</summary>
+
+#### CSS
+
+- `:first-child` вибирає елемент, якщо він перший серед усіх дочірніх елементів
+  свого батька.
+
+- `:last-child` — якщо він останній серед дочірніх.
+
+#### Приклад:
+
+```css
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  color: red;
+}
+```
+
+- Важливо: вони дивляться на позицію, а не на тип елемента (на відміну від
+  `:first-of-type` / `:last-of-type`).
+
+</details>
+
+<details>
+<summary>135. ???</summary>
 
 #### CSS
 
