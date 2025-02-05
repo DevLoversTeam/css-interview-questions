@@ -5555,7 +5555,19 @@ function animate() {
 </details>
 
 <details>
-<summary>141. ???</summary>
+<summary>141. Що таке об'єктно-орієнтований CSS (OOCSS)?</summary>
+
+#### CSS
+
+- OOCSS (Object-Oriented CSS) — це методологія написання CSS, що базується на
+  розділенні стилів на структуру (layout) і шкіру (theme), та повторному
+  використанні класів як «об’єктів» для зменшення дублювання і підвищення
+  гнучкості коду.
+
+</details>
+
+<details>
+<summary>142. ???</summary>
 
 #### CSS
 
