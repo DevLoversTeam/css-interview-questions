@@ -5649,7 +5649,54 @@ function animate() {
 </details>
 
 <details>
-<summary>146. ???</summary>
+<summary>146. Як зробити гамбургер-меню лише на CSS?</summary>
+
+#### CSS
+
+- Створити гамбургер-меню на CSS можна так:
+
+1. Використати чекбокс (`<input type="checkbox">`) для контролю відкриття меню.
+
+2. Стилізувати три смужки як гамбургер через псевдоелементи.
+
+3. При відміченому чекбоксі через CSS (`:checked`) показувати/ховати меню.
+
+#### Простий приклад:
+
+```html
+<input type="checkbox" id="menu-toggle" />
+<label for="menu-toggle" class="hamburger">
+  <span></span><span></span><span></span>
+</label>
+<nav class="menu">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+</nav>
+```
+
+```css
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: black;
+  transition: 0.3s;
+}
+
+.menu {
+  display: none;
+}
+
+#menu-toggle:checked + .hamburger + .menu {
+  display: block;
+}
+```
+
+</details>
+
+<details>
+<summary>147. ???</summary>
 
 #### CSS
 
