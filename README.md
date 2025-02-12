@@ -5696,7 +5696,54 @@ function animate() {
 </details>
 
 <details>
-<summary>147. ???</summary>
+<summary>147. Як зробити слайдер або карусель лише на CSS?</summary>
+
+#### CSS
+
+- Карусель на чистому CSS роблять через:
+
+1. Використання `input type="radio"` або чекбоксів для керування слайдами.
+
+2. Приховані елементи-контролери (`radio buttons`), стилізовані як навігація.
+
+3. Позиціонування слайдів абсолютом в контейнері.
+
+4. Показ слайду через CSS-селектор `:checked` (наприклад, #slide1:checked ~
+   .slides .slide1 { opacity: 1; }).
+
+5. Анімації або переходи для плавності.
+
+#### Простий приклад:
+
+```html
+<input type="radio" name="slider" id="slide1" checked />
+<input type="radio" name="slider" id="slide2" />
+<div class="slides">
+  <div class="slide slide1">Slide 1</div>
+  <div class="slide slide2">Slide 2</div>
+</div>
+<label for="slide1">1</label>
+<label for="slide2">2</label>
+```
+
+```css
+.slides .slide {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease;
+}
+
+#slide1:checked ~ .slides .slide1,
+#slide2:checked ~ .slides .slide2 {
+  opacity: 1;
+  position: relative;
+}
+```
+
+</details>
+
+<details>
+<summary>148. ???</summary>
 
 #### CSS
 
