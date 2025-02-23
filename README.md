@@ -1,6 +1,8 @@
-# CSS
+<h1>
+  CSS <img src="./assets/css.svg" width="40" height="40" alt="CSS logo"/>
+</h1>
 
-## Найпопулярніші запитання та відповіді на співбесіді з CSS
+<h2>Найпопулярніші запитання та відповіді на співбесіді з CSS</h2>
 
 <details>
 <summary>1. Що таке CSS?</summary>
