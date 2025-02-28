@@ -1055,22 +1055,22 @@ span {
 
 ```css
 .icon {
-width: 50px;
-height: 50px;
-background-image: url('sprite.png');
-display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("sprite.png");
+  display: inline-block;
 }
 
 .icon-facebook {
-background-position: 0 0; /_ Перша іконка в спрайті _/
+  background-position: 0 0; /* Перша іконка в спрайті */
 }
 
 .icon-twitter {
-background-position: -50px 0; /_ Друга іконка в спрайті _/
+  background-position: -50px 0; /* Друга іконка в спрайті */
 }
 
 .icon-linkedin {
-background-position: -100px 0; /_ Третя іконка в спрайті _/
+  background-position: -100px 0; /* Третя іконка в спрайті */
 }
 ```
 
@@ -1099,10 +1099,12 @@ background-position: -100px 0; /_ Третя іконка в спрайті _/
 
 ```css
 .element {
--webkit-transform: rotate(45deg); /_ для браузерів на WebKit, таких як Chrome, Safari _/
--moz-transform: rotate(45deg); /_ для Firefox _/
--ms-transform: rotate(45deg); /_ для Internet Explorer _/
-transform: rotate(45deg); /_ стандартна властивість _/
+  -webkit-transform: rotate(
+    45deg
+  ); /* для браузерів на WebKit, таких як Chrome, Safari */
+  -moz-transform: rotate(45deg); /* для Firefox */
+  -ms-transform: rotate(45deg); /* для Internet Explorer */
+  transform: rotate(45deg); /* стандартна властивість */
 }
 ```
 
