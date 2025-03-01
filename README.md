@@ -1152,7 +1152,7 @@ p::first-letter {
 </details>
 
 <details>
-<summary>33. ???</summary>
+<summary>33. Що таке схлопування меж (margin collapsing)?</summary>
 
 #### CSS
 
