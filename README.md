@@ -1523,7 +1523,61 @@ button,
 </details>
 
 <details>
-<summary>39. ???</summary>
+<summary>39. Для чого використовується ключове слово currentColor у CSS?</summary>
+
+#### CSS
+
+- `currentColor` — це ключове слово в CSS, яке задає значення кольору (`color`) для інших властивостей, що підтримують кольори.
+
+#### Як працює
+
+- `currentColor` автоматично використовує значення, встановлене у властивості `color`.
+
+#### Приклади використання
+
+✅ Однаковий колір для тексту та рамки
+
+```css
+button {
+  color: blue;
+  border: 2px solid currentColor;
+}
+```
+
+- Рамка кнопки буде того ж кольору, що й текст (`blue`).
+
+✅ SVG-іконки із кольором тексту
+
+```css
+.icon {
+  color: red;
+  fill: currentColor;
+}
+```
+
+- `fill` у SVG прийме `color` елемента (`red`).
+
+✅ Прозорість зі спадкуванням кольору
+
+```css
+.link {
+  color: green;
+  background: linear-gradient(currentColor 0%, transparent 100%);
+}
+```
+
+- Градієнт стартує від `green`, бо це значення `color`.
+
+#### Висновок
+
+- Використовує значення `color`, усуваючи дублювання стилів.
+- Особливо корисно для SVG, `border`, `background`, `box-shadow`.
+- Спрощує темізацію: змінюєш `color`, і все підлаштовується.
+
+</details>
+
+<details>
+<summary>40. ???</summary>
 
 #### CSS
 
