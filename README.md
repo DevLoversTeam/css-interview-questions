@@ -1885,7 +1885,76 @@ color: transparent;
 </details>
 
 <details>
-<summary>47. ???</summary>
+<summary>47. Які CSS-властивості використовуються для створення анімацій та плавних переходів?</summary>
+
+#### CSS
+
+- Для створення анімацій та плавних переходів у CSS використовуються такі властивості:
+
+1. **Плавні переходи (`transition`)**
+
+- Дозволяють змінювати значення властивостей із плавною анімацією.
+
+**Основні властивості:**
+
+- `transition-property` – яка властивість анімується.
+- `transition-duration` – час анімації.
+- `transition-timing-function` – крива прискорення (наприклад, `ease`, `linear`, `ease-in-out`).
+- `transition-delay` – затримка перед анімацією.
+
+#### Приклад:
+
+```css
+button {
+  background-color: blue;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: red;
+}
+```
+
+2. **Анімації (`@keyframes` + `animation`)**
+
+- Дозволяють створювати складніші анімації зі зміною стилів у ключових точках.
+
+**Основні властивості:**
+
+`animation-name` – ім'я анімації (відповідає @keyframes).
+`animation-duration` – тривалість анімації.
+`animation-timing-function` – крива прискорення.
+`animation-delay` – затримка перед початком.
+`animation-iteration-count` – кількість повторень (infinite для безкінечної анімації).
+`animation-direction` – напрям (normal, reverse, alternate).
+`animation-fill-mode` – визначає, чи зберігається стан анімації після завершення.
+
+#### Приклад:
+
+```css
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.element {
+  animation: fadeIn 1s ease-in-out;
+}
+```
+
+#### Що використовувати?
+
+- `transition` – якщо треба просто змінювати стилі при наведенні або зміні класу.
+- `animation` – якщо потрібен складніший ефект з кількома ключовими кадрами.
+
+</details>
+
+<details>
+<summary>48. ???</summary>
 
 #### CSS
 
