@@ -2221,10 +2221,46 @@ const AnimatedDiv = styled.div`
 </details>
 
 <details>
-<summary>52. ???</summary>
+<summary>52. Які способи підключення CSS до HTML ти знаєш?</summary>
+
+#### CSS
+
+- Є три способи:
+
+1. **Вбудований (Inline CSS)** – через атрибут `style` в HTML-елементі:
+
+```html
+<p style="color: red;">Текст</p>
+```
+
+2. **Вбудований блок (Internal CSS)** – у `<style>` всередині `<head>`:
+
+```html
+<head>
+  <style>
+    p {
+      color: red;
+    }
+  </style>
+</head>
+```
+
+3. **Зовнішній файл (External CSS)** – підключення окремого `.css` файлу через `<link>`:
+
+```html
+<head>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+```
+
+</details>
+
+<details>
+<summary>53. ???</summary>
 
 #### CSS
 
 - Coming Soon... 😎
 
 </details>
+```
