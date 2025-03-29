@@ -2212,7 +2212,16 @@ const AnimatedDiv = styled.div`
 </details>
 
 <details>
-<summary>51. ???</summary>
+<summary>51. Що означає CSS і яке його основне використання?</summary>
+
+#### CSS
+
+- CSS (Cascading Style Sheets) – це мова стилів, яка використовується для опису зовнішнього вигляду HTML-документів. Основне використання – керування стилями елементів, такими як кольори, шрифти, відступи, розміри та розташування на сторінці.
+
+</details>
+
+<details>
+<summary>52. ???</summary>
 
 #### CSS
 
