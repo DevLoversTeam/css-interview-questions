@@ -2451,12 +2451,3 @@ select {
 - Coming Soon... 😎
 
 </details>
-
-<details>
-<summary>57. ???</summary>
-
-#### CSS
-
-- Coming Soon... 😎
-
-</details>
