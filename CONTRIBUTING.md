@@ -6,19 +6,4 @@
 
 - Кожне питання повинне бути оформлене в HTML-елементі `<details>` зі структурою:
 
-<details>
-<summary>Питання?</summary>
-
-#### CSS
-
-- Відповідь...
-
-1. **Приклад:** використовуйте...
-
-   ```css
-   p {
-     border: inherit;
-   }
-   ```
-
-</details>
+![Code](./assets/code.png)
