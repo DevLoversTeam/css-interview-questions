@@ -6,4 +6,4 @@
 
 - Кожне питання повинне бути оформлене в HTML-елементі `<details>` зі структурою:
 
-![Code](./assets/code.png)
+![Code](../assets/code.png)
