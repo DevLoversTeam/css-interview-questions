@@ -2347,7 +2347,104 @@ li:nth-child(2) {
 </details>
 
 <details>
-<summary>55. ???</summary>
+<summary>55. Опишіть, як реалізувати скидання CSS і чому це корисно.</summary>
+
+#### CSS
+
+1. `Normalize.css` — не прибирає все, а уніфікує:
+
+- Підключаєш файл:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://necolas.github.io/normalize.css/latest/normalize.css"
+/>
+```
+
+- Перевага — зберігає корисні стилі, робить вигляд однаковим у всіх браузерах.
+
+2. `Eric Meyer Reset` — агресивне скидання:
+
+```css
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+... {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+```
+
+- Мінус: треба переписувати багато стилів з нуля.
+
+3. Modern CSS Reset — компактна сучасна версія:
+
+```css
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+```
+
+- Ціль — контроль. Без скидання різні браузери дають різні стилі. Це зламає дизайн.
+
+#### Користь:
+
+- Усуває розбіжності в дефолтних стилях між браузерами. Дає чисту стартову точку. Менше багів, стабільніше верстання.
+
+</details>
+
+<details>
+<summary>56. ???</summary>
 
 #### CSS
 
