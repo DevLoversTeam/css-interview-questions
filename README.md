@@ -2603,7 +2603,29 @@ h1 + p {
 </details>
 
 <details>
-<summary>62. ???</summary>
+<summary>62. Поясніть що таке Margin Collapsing.</summary>
+
+#### CSS
+
+- **Margin Collapsing** — це коли вертикальні зовнішні відступи двох елементів зливаються в один.
+
+- Бере більший з двох `margin`, а не сумує їх.
+
+#### Приклад:
+
+```html
+<div style="margin-bottom: 20px;"></div>
+<div style="margin-top: 30px;"></div>
+```
+
+- Відстань між дивами буде `30px`, а не `50px`.
+
+- Працює тільки вертикально.
+
+</details>
+
+<details>
+<summary>63. ???</summary>
 
 #### CSS
 
