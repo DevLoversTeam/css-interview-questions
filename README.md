@@ -2625,7 +2625,22 @@ h1 + p {
 </details>
 
 <details>
-<summary>63. ???</summary>
+<summary>63. Які є значення і властивості box-sizing і що вони роблять?</summary>
+
+#### CSS
+
+- **Властивість: box-sizing.**
+
+- Значення:
+
+  - `content-box` — ширина і висота враховують тільки контент. `Padding` і `border` додаються окремо.
+
+  - `border-box` — ширина і висота включають контент, `padding` і `border`.
+
+</details>
+
+<details>
+<summary>64. ???</summary>
 
 #### CSS
 
