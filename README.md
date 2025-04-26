@@ -2444,7 +2444,38 @@ select {
 </details>
 
 <details>
-<summary>56. ???</summary>
+<summary>56. Як ви вибираєте елементи за атрибутами в CSS?</summary>
+
+#### CSS
+
+- Звернення до атрибутів пишемо у квадратних дужках:
+
+```css
+/* Всі лінки, що відкриваються в новій вкладці */
+a[target="_blank"] {
+  color: red;
+}
+
+/* Всі інпути з атрибутом required */
+input[required] {
+  border: 2px solid orange;
+}
+
+/* Всі кнопки зі специфічним типом */
+button[type="submit"] {
+  background-color: green;
+}
+
+/* Всі зображення з alt, що містить слово "logo" */
+img[alt*="logo"] {
+  width: 150px;
+}
+```
+
+</details>
+
+<details>
+<summary>57. ???</summary>
 
 #### CSS
 
