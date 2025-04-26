@@ -2475,7 +2475,38 @@ img[alt*="logo"] {
 </details>
 
 <details>
-<summary>57. ???</summary>
+<summary>57. Що таке псевдоелементи і для чого вони використовуються?</summary>
+
+#### CSS
+
+- Псевдоелементи — це спецконструкції для стилізації частин елементів, яких нема в HTML.
+
+**Використовуються для:**
+
+- додавання контенту (`::before`, `::after`)
+
+- стилізації першої літери або рядка (`::first-letter`, `::first-line`)
+
+- кастомізації `::placeholder` в інпутах
+
+**Приклад:**
+
+```css
+p::first-line {
+  font-weight: bold;
+}
+
+button::after {
+  content: " →";
+}
+```
+
+- Це дає гнучкість без зайвого HTML.
+
+</details>
+
+<details>
+<summary>58. ???</summary>
 
 #### CSS
 
