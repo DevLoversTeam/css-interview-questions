@@ -2633,14 +2633,80 @@ h1 + p {
 
 - Значення:
 
-  - `content-box` — ширина і висота враховують тільки контент. `Padding` і `border` додаються окремо.
+  - `content-box` — ширина і висота враховують тільки контент, `padding` і `border` додаються окремо.
 
   - `border-box` — ширина і висота включають контент, `padding` і `border`.
 
 </details>
 
 <details>
-<summary>64. ???</summary>
+<summary>64. Як відцентрувати <div> за допомогою CSS?</summary>
+
+#### CSS
+
+- Щоб відцентрувати `<div>` за допомогою `CSS`, можна використовувати кілька підходів. Ось найбільш популярні:
+
+1. За допомогою `margin: auto` (для блочних елементів з заданою шириною):
+
+```css
+.element {
+  width: 50%;
+  margin: 0 auto;
+}
+```
+
+2. `Flexbox` (центрування в контейнері):
+
+```css
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.element {
+  width: 50%;
+}
+```
+
+3. `Grid` (центрування в контейнері):
+
+```css
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.element {
+  width: 50%;
+}
+```
+
+4. Абсолютне позиціонування з `transform` для точного центрування:
+
+```css
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+```
+
+- Ці методи дозволяють вам відцентрувати `<div>` по горизонталі та/або вертикалі в залежності від вимог.
+
+</details>
+
+<details>
+<summary>65. ???</summary>
 
 #### CSS
 
