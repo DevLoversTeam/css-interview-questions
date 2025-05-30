@@ -2888,7 +2888,78 @@ h1 + p {
 </details>
 
 <details>
-<summary>68. ???</summary>
+<summary>68. Як створити sticky footer за допомогою CSS?</summary>
+
+#### CSS
+
+- Щоб створити sticky footer (футер, що прилипає до низу сторінки, навіть якщо контенту мало), можна скористатися Flexbox-макетом. Це сучасний, простий і стабільний підхід.
+
+#### ✅ Готове рішення з поясненням:
+
+```html
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Footer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      .layout {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main {
+        flex: 1;
+      }
+
+      .footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <main class="main">
+        <p>Контент сторінки (може бути короткий)</p>
+      </main>
+      <footer class="footer">
+        <p>Я — футер. Я завжди внизу!</p>
+      </footer>
+    </div>
+  </body>
+</html>
+```
+
+#### 🧠 Як це працює:
+
+- html, body → мають height: 100% — дозволяє контейнеру .layout зайняти всю висоту.
+
+- .layout → display: flex; flex-direction: column — компоненти йдуть вертикально.
+
+- .main → flex: 1 — займає всю доступну висоту, «виштовхує» футер вниз.
+
+- .footer → автоматично лишається внизу, навіть коли мало контенту.
+
+</details>
+
+<details>
+<summary>69. ???</summary>
 
 #### CSS
 
