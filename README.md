@@ -4065,7 +4065,30 @@ grid-template-areas:
 </details>
 
 <details>
-<summary>91. ???</summary>
+<summary>91. Що таке медіа-запит?</summary>
+
+#### CSS
+
+- Медіа-запит (media query) — це інструмент CSS, що дозволяє застосовувати стилі
+  залежно від характеристик пристрою (ширини екрана, орієнтації, роздільної
+  здатності тощо).
+
+#### Приклад:
+
+```css
+@media (max-width: 768px) {
+  body {
+    background-color: lightgray;
+  }
+}
+```
+
+- Цей стиль застосовується лише, якщо ширина екрана ≤ 768px.
+
+</details>
+
+<details>
+<summary>92. ???</summary>
 
 #### CSS
 
