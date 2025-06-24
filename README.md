@@ -4157,7 +4157,52 @@ grid-template-areas:
 </details>
 
 <details>
-<summary>94. ???</summary>
+<summary>94. Як можна створити макет, який змінюється з двоколонкового на одноколонковий, за допомогою медіа-запитів?</summary>
+
+#### CSS
+
+- Створи двоколонковий макет (наприклад, з CSS Grid або Flexbox), а потім через
+  медіа-запит змінюй його на одноколонковий при меншій ширині екрана.
+
+#### Приклад (Flexbox):
+
+```css
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+```
+
+#### Приклад (CSS Grid):
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+```
+
+#### Результат:
+
+- На великих екранах — 2 колонки, на мобільних — 1 колонка.
+
+</details>
+
+<details>
+<summary>95. ???</summary>
 
 #### CSS
 
