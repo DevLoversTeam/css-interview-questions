@@ -4351,7 +4351,18 @@ grid-template-areas:
 </details>
 
 <details>
-<summary>98. ???</summary>
+<summary>98. Які способи є для анімації появи та зникнення елемента на сторінці??</summary>
+
+#### CSS
+
+- Можна використати CSS-анімації або transition у поєднанні з класами
+  (наприклад, opacity + transform), або бібліотеки типу Framer Motion / React
+  Transition Group для керування станом появи/зникнення.
+
+</details>
+
+<details>
+<summary>99. ???</summary>
 
 #### CSS
 
