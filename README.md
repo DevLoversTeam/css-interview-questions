@@ -3993,7 +3993,32 @@ grid-template-rows: 100px auto;
 </details>
 
 <details>
-<summary>88. ???</summary>
+<summary>88. У чому різниця між grid-template-areas та grid-template-columns?</summary>
+
+#### CSS
+
+- Відповідь:
+
+  - `grid-template-columns` задає ширину стовпців сітки (кількість і розміри).
+
+  - `grid-template-areas` задає візуальне розміщення іменованих областей у сітці
+    для зручного позиціонування елементів за назвами.
+
+#### Приклад:
+
+```css
+grid-template-columns: 1fr 1fr;
+grid-template-areas:
+  'header header'
+  'sidebar main';
+```
+
+Це визначає 2 стовпці однакової ширини та розкладку з іменами областей.
+
+</details>
+
+<details>
+<summary>89. ???</summary>
 
 #### CSS
 
