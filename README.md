@@ -3867,7 +3867,40 @@ background-image: url('stars.png'), linear-gradient(to bottom, #000000aa, #00000
 </details>
 
 <details>
-<summary>83. ???</summary>
+<summary>83. У чому різниця між justify-content та align-items у Flexbox?</summary>
+
+#### CSS
+
+- `justify-content` — вирівнює елементи по головній осі (горизонтальній за
+  замовчуванням).
+
+**Напр.: flex-start, center, space-between**
+
+- `align-items` — вирівнює елементи по поперечній осі (вертикальній за
+  замовчуванням).
+
+**Напр.: stretch, center, flex-end**
+
+#### Приклад:
+
+```css
+.container {
+  display: flex;
+  justify-content: center; /* по горизонталі */
+  align-items: center; /* по вертикалі */
+}
+```
+
+#### Головне:
+
+Напрям justify-content змінюється з flex-direction.
+
+align-items — завжди перпендикулярна до нього.
+
+</details>
+
+<details>
+<summary>84. ???</summary>
 
 #### CSS
 
