@@ -3930,7 +3930,36 @@ align-items — завжди перпендикулярна до нього.
 </details>
 
 <details>
-<summary>85. ???</summary>
+<summary>85. Як у Flexbox створити стовпці однакової ширини незалежно від їхнього вмісту?</summary>
+
+#### CSS
+
+- Щоб створити стовпці однакової ширини у Flexbox, кожному елементу задаємо:
+
+```css
+.item {
+  flex: 1;
+}
+```
+
+- А контейнеру:
+
+```css
+.container {
+  display: flex;
+}
+```
+
+- Пояснення:
+
+flex: 1 = flex-grow: 1; flex-shrink: 1; flex-basis: 0;
+
+Усі елементи ділять простір порівну, незалежно від вмісту.
+
+</details>
+
+<details>
+<summary>86. ???</summary>
 
 #### CSS
 
