@@ -4444,7 +4444,27 @@ grid-template-areas:
 </details>
 
 <details>
-<summary>103. ???</summary>
+<summary>103. Що таке CSS-модулі та як їх застосовувати?</summary>
+
+#### CSS
+
+- CSS-модулі — це підхід, де стилі автоматично обмежуються тільки тим
+  компонентом, у якому їх імпортують (ізольований скоуп).
+
+#### Використання в React:
+
+```jsx
+import styles from './Button.module.css';
+
+<button className={styles.primary}>Click</button>;
+```
+
+- Переваги — уникнення конфліктів імен класів та краща підтримка коду.
+
+</details>
+
+<details>
+<summary>104. ???</summary>
 
 #### CSS
 
