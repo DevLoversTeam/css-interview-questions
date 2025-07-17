@@ -4464,7 +4464,27 @@ import styles from './Button.module.css';
 </details>
 
 <details>
-<summary>104. ???</summary>
+<summary>104. Що таке CSS-in-JS і які його переваги?</summary>
+
+#### CSS
+
+- `CSS-in-JS` — це підхід, коли стилі пишуться безпосередньо в
+  JavaScript/TypeScript-файлах, часто прив’язані до компонентів.
+
+#### Приклади: styled-components, Emotion.
+
+- Переваги:
+
+  - Ізоляція стилів на рівні компонентів.
+
+  - Динамічні стилі через пропси/стан.
+
+  - Спільний код JS і стилів.
+
+</details>
+
+<details>
+<summary>105. ???</summary>
 
 #### CSS
 
