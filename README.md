@@ -4484,7 +4484,21 @@ import styles from './Button.module.css';
 </details>
 
 <details>
-<summary>105. ???</summary>
+<summary>105. Які інструменти використовуються для лінтингу та форматування CSS?</summary>
+
+#### CSS
+
+- Для лінтингу — Stylelint (перевірка якості та відповідності стилів
+  стандартам).
+
+- Для форматування — Prettier (автоматичне вирівнювання й оформлення коду).
+
+Часто інтегруються разом у CI/CD та редактор.
+
+</details>
+
+<details>
+<summary>106. ???</summary>
 
 #### CSS
 
