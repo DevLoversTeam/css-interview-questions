@@ -4498,7 +4498,26 @@ import styles from './Button.module.css';
 </details>
 
 <details>
-<summary>106. ???</summary>
+<summary>106. Як зробити, щоб кнопка виглядала як звичайне посилання?</summary>
+
+#### CSS
+
+- Просто прибрати стандартні стилі кнопки та застосувати стилі посилання:
+
+```css
+button {
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+```
+
+</details>
+
+<details>
+<summary>107. ???</summary>
 
 #### CSS
 
