@@ -4517,7 +4517,38 @@ button {
 </details>
 
 <details>
-<summary>107. ???</summary>
+<summary>107. Як створити кастомні чекбокси та радіокнопки за допомогою CSS?</summary>
+
+#### CSS
+
+- Роблять прихований `<input type="checkbox/radio">` і стилізують його
+  пов’язаний `<label>` або псевдоелементи (`::before`, `::after`).
+- Стан `:checked` використовують для зміни стилю при виборі.
+
+#### Приклад:
+
+```css
+input[type='checkbox'] {
+  display: none;
+}
+
+label::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+input:checked + label::before {
+  background: #000;
+}
+```
+
+</details>
+
+<details>
+<summary>108. ???</summary>
 
 #### CSS
 
