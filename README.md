@@ -3762,7 +3762,48 @@ div {
 </details>
 
 <details>
-<summary>80. ???</summary>
+<summary>80. Як реалізувати кілька фонів (background layers) для одного елемента в CSS і як вони працюють?</summary>
+
+#### CSS
+
+- CSS дозволяє використовувати кілька фонів одночасно в одному елементі,
+  наприклад:
+
+  - градієнт + зображення
+
+  - кілька іконок
+
+  - шар затемнення + фонова картинка
+
+#### Синтаксис:
+
+```css
+background-image: url('stars.png'), linear-gradient(to bottom, #000000aa, #00000000);
+```
+
+#### Головна ідея:
+
+- Фони вказуються через кому
+
+- Перший — верхній шар, останній — нижній (базовий)
+
+#### Приклад — градієнт поверх зображення:
+
+```css
+.element {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    /* верхній шар */ url('/images/bg.jpg'); /* нижній шар */
+
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+```
+
+</details>
+
+<details>
+<summary>81. ???</summary>
 
 #### CSS
 
