@@ -3717,7 +3717,52 @@ background-color: rgba(0, 0, 255, 0.3); /* синій з 30% непрозорі�
 </details>
 
 <details>
-<summary>79. ???</summary>
+<summary>79. Як створити градієнтний фон у CSS і які є типи градієнтів?</summary>
+
+#### CSS
+
+1. Лінійний градієнт (linear-gradient)
+
+```css
+background: linear-gradient(to right, #ff7e5f, #feb47b);
+```
+
+- to right — напрям (може бути: to left, to bottom, 45deg, тощо)
+
+- #ff7e5f — стартовий колір
+
+- #feb47b — кінцевий колір
+
+Приклад для кнопки:
+
+```css
+button {
+  background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+}
+```
+
+2. Радіальний градієнт (radial-gradient)
+
+```css
+background: radial-gradient(circle, #ff9a9e, #fad0c4);
+```
+
+- Центрований круговий перехід кольорів
+
+- Можна змінювати форму: circle, ellipse
+
+Приклад:
+
+```css
+div {
+  background: radial-gradient(circle at center, #ff9a9e 0%, #fad0c4 100%);
+}
+```
+
+</details>
+
+<details>
+<summary>80. ???</summary>
 
 #### CSS
 
