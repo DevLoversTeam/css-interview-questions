@@ -4567,7 +4567,26 @@ input:checked + label::before {
 </details>
 
 <details>
-<summary>109. ???</summary>
+<summary>109. Яка найкраща практика для стилізації плейсхолдера у полі введення?</summary>
+
+#### CSS
+
+- Використовувати псевдоклас `::placeholder` для зміни стилю заповнювача,
+  зберігаючи достатній контраст і читабельність.
+
+#### Приклад:
+
+```css
+input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+```
+
+</details>
+
+<details>
+<summary>110. ???</summary>
 
 #### CSS
 
