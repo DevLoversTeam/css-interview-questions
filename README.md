@@ -4586,7 +4586,28 @@ input::placeholder {
 </details>
 
 <details>
-<summary>110. ???</summary>
+<summary>110. Як правильно реалізувати стилі фокуса для забезпечення доступності?</summary>
+
+#### CSS
+
+- Використовують псевдоклас `:focus` (і бажано `:focus-visible`) для чіткого
+  візуального індикатора.
+
+- Найкраща практика — не прибирати `outline`, а кастомізувати його:
+
+```css
+button:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+```
+
+- Це допомагає користувачам з клавіатурною навігацією.
+
+</details>
+
+<details>
+<summary>111. ???</summary>
 
 #### CSS
 
