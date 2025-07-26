@@ -3466,7 +3466,77 @@ font-weight).
 </details>
 
 <details>
-<summary>74. ???</summary>
+<summary>74. Як додати та використовувати власні (кастомні) шрифти на вебсторінці за допомогою CSS?</summary>
+
+#### CSS
+
+- Щоб додати власні шрифти (які не входять до стандартних системних),
+  використовують директиву @font-face у CSS. Це дозволяє завантажити шрифт з
+  локального файлу або з сервера.
+
+#### Кроки для додавання локального кастомного шрифту:
+
+1. Поклади шрифт у папку, напр.:
+
+```swift
+/fonts/open-sans.woff2
+```
+
+2. Оголоси шрифт у CSS:
+
+```css
+@font-face {
+  font-family: 'open-sans';
+  src: url('fonts/open-sans.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+```
+
+3. Використай його:
+
+```css
+body {
+  font-family: 'open-sans', sans-serif;
+}
+```
+
+#### Пояснення:
+
+font-family — задає ім’я, яке потім використовуватиметься в CSS.
+
+src — шлях до шрифту та його формат (woff2 — найоптимальніший).
+
+Можна підключити кілька варіантів (bold, italic) — треба окремий @font-face для
+кожного.
+
+#### Альтернатива — Google Fonts:
+
+```html
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+```
+
+```css
+body {
+  font-family: 'Inter', sans-serif;
+}
+```
+
+#### Рекомендації:
+
+Використовуй формат .woff2 — мінімальний розмір + найкраща підтримка.
+
+Завжди вказуй fallback-шрифт (наприклад, sans-serif).
+
+Винось кастомні шрифти у папку fonts/ і називай у kebab-case.
+
+</details>
+
+<details>
+<summary>75. ???</summary>
 
 #### CSS
 
