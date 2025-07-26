@@ -3327,7 +3327,47 @@ main {
 </details>
 
 <details>
-<summary>71. ???</summary>
+<summary>71. Як змінити шрифт тексту за допомогою CSS?</summary>
+
+#### CSS
+
+- Щоб змінити шрифт тексту в CSS, використовується властивість font-family.
+
+```css
+p {
+  font-family: 'Arial', sans-serif;
+}
+```
+
+#### Деталі:
+
+font-family приймає список шрифтів через кому.
+
+Перший — основний, далі — запасні (fallback).
+
+Якщо ні один не підтримується — браузер візьме системний з тієї ж групи
+(sans-serif, serif, monospace тощо).
+
+#### Приклад з Google Fonts:
+
+```html
+<!-- index.html -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+  rel="stylesheet"
+/>
+```
+
+```css
+body {
+  font-family: 'Roboto', sans-serif;
+}
+```
+
+</details>
+
+<details>
+<summary>72. ???</summary>
 
 #### CSS
 
