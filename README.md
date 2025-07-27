@@ -4625,7 +4625,29 @@ button:focus-visible {
 </details>
 
 <details>
-<summary>112. ???</summary>
+<summary>112. Як виправити проблеми з пошкодженими колонками у макеті?</summary>
+
+#### CSS
+
+- Перевір:
+
+  - чи правильно заданий `display` (`flex` або `grid`) на контейнері;
+
+  - чи всі колонки мають коректні розміри (`flex-basis`, `width` або
+    `grid-template-columns`);
+
+  - чи немає зайвих `margin/padding`, що зрушують колонки;
+
+  - чи не порушує макет `box-sizing` (краще `border-box`);
+
+  - чи не спричиняє проблеми `overflow` або `min-width`.
+
+Часто допомагає тимчасове підсвічування меж (`outline: 1px solid red`).
+
+</details>
+
+<details>
+<summary>113. ???</summary>
 
 #### CSS
 
