@@ -4706,7 +4706,38 @@ button:focus-visible {
 </details>
 
 <details>
-<summary>116. ???</summary>
+<summary>116. Як застосовувати 3D-перетворення в CSS?</summary>
+
+#### CSS
+
+- В CSS 3D-перетворення застосовують через властивості:
+
+  - `transform: rotateX(), rotateY(), rotateZ()` — обертання по осях.
+
+  - `transform: translateZ()` — переміщення по Z-ось.
+
+  - `perspective` — задає глибину (перспективу) контейнеру.
+
+  - `transform-style: preserve-3d` — для вкладених елементів, щоб зберегти 3D
+    ефект.
+
+#### Приклад:
+
+```css
+.container {
+  perspective: 600px;
+}
+
+.element {
+  transform-style: preserve-3d;
+  transform: rotateY(45deg);
+}
+```
+
+</details>
+
+<details>
+<summary>117. ???</summary>
 
 #### CSS
 
