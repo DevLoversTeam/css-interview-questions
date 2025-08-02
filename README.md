@@ -4758,7 +4758,29 @@ button:focus-visible {
 </details>
 
 <details>
-<summary>118. ???</summary>
+<summary>118. Що таке backface-visibility у CSS і як його використовувати?</summary>
+
+#### CSS
+
+- Видимість задньої поверхні (`backface-visibility`) — це CSS-властивість, яка
+  визначає, чи видно ли задню сторону елемента при його 3D-обертанні.
+
+  - `visible` — задня сторона показується (за замовчуванням).
+
+  - `hidden` — задня сторона прихована, не відображається при обертанні на 180°.
+
+#### Приклад:
+
+```css
+.element {
+  backface-visibility: hidden;
+}
+```
+
+</details>
+
+<details>
+<summary>119. ???</summary>
 
 #### CSS
 
