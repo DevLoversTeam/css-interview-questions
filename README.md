@@ -4780,7 +4780,49 @@ button:focus-visible {
 </details>
 
 <details>
-<summary>119. ???</summary>
+<summary>119. Як зробити ефект перевернутої картки (card flip) на CSS?</summary>
+
+#### CSS
+
+- Створюють контейнер з двома сторонами (`front` і `back`), використовують
+  3D-перетворення і `backface-visibility: hidden`.
+
+#### Приклад:
+
+```css
+.container {
+  perspective: 1000px;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+```
+
+</details>
+
+<details>
+<summary>120 ???</summary>
 
 #### CSS
 
