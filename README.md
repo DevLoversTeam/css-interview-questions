@@ -4822,7 +4822,38 @@ button:focus-visible {
 </details>
 
 <details>
-<summary>120 ???</summary>
+<summary>120. Які візуальні ефекти можна створити за допомогою CSS-фільтрів?</summary>
+
+#### CSS
+
+- CSS-фільтри дають змогу створювати ефекти:
+
+`blur()` — розмиття
+
+`brightness()` — яскравість
+
+`contrast()` — контраст
+
+`grayscale()` — відтінки сірого
+
+`invert()` — інверсія кольорів
+
+`sepia()` — сепія
+
+`saturate()` — насиченість
+
+`drop-shadow()` — тінь
+
+- Їх можна комбінувати через пробіл:
+
+```css
+filter: grayscale(50%) blur(2px);
+```
+
+</details>
+
+<details>
+<summary>121. ???</summary>
 
 #### CSS
 
