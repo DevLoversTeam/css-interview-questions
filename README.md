@@ -3597,7 +3597,42 @@ html {
 </details>
 
 <details>
-<summary>76. ???</summary>
+<summary>76. Як правильно додати фонове зображення до елемента в HTML/CSS?</summary>
+
+#### CSS
+
+- Щоб додати фонове зображення до елемента, використовуємо CSS-властивість
+  background-image. Найчастіше це робиться через CSS-класи або стилі:
+
+**Варіант 1: Через CSS-клас**
+
+```css
+.hero-section {
+  background-image: url('/images/hero.jpg');
+  background-size: cover; /* масштабування */
+  background-position: center; /* центрування */
+  background-repeat: no-repeat; /* відключення повторення */
+}
+```
+
+```html
+<div class="hero-section">
+  <!-- контент -->
+</div>
+```
+
+**Варіант 2: Inline-стиль (не рекомендовано для масштабних проєктів)**
+
+```html
+<div
+  style="background-image: url('/images/hero.jpg'); background-size: cover; background-position: center;"
+></div>
+```
+
+</details>
+
+<details>
+<summary>77. ???</summary>
 
 #### CSS
 
