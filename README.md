@@ -3837,7 +3837,37 @@ background-image: url('stars.png'), linear-gradient(to bottom, #000000aa, #00000
 </details>
 
 <details>
-<summary>82. ???</summary>
+<summary>82. Як працює властивість flex-grow у CSS Flexbox?</summary>
+
+#### CSS
+
+- `flex-grow` визначає, наскільки елемент може збільшуватись у розмірі, щоб
+  зайняти вільний простір у флекс-контейнері.
+
+#### Приклад:
+
+```css
+.item {
+  flex-grow: 1;
+}
+```
+
+- Це означає, що елемент отримає частку вільного простору пропорційно значенню
+  flex-grow.
+
+#### Наприклад:
+
+```html
+<div class="box" style="flex-grow: 1;"></div>
+<div class="box" style="flex-grow: 2;"></div>
+```
+
+- Другий блок займе вдвічі більше простору, ніж перший.
+
+</details>
+
+<details>
+<summary>83. ???</summary>
 
 #### CSS
 
