@@ -4202,7 +4202,45 @@ grid-template-areas:
 </details>
 
 <details>
-<summary>95. ???</summary>
+<summary>95. Поясніть використання min-width та max-width у медіа-запитах.</summary>
+
+#### CSS
+
+- `min-width` і `max-width` у медіа-запитах визначають діапазон ширини екрана,
+  на який мають застосовуватись стилі.
+
+#### min-width — стилі застосовуються від цієї ширини і вище (mobile-first підхід).
+
+```css
+@media (min-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+```
+
+#### max-width — стилі застосовуються до цієї ширини включно.
+
+```css
+@media (max-width: 767px) {
+  body {
+    background-color: lightgray;
+  }
+}
+```
+
+#### Використання:
+
+- `min-width` — адаптація від мобільного до десктопа.
+
+- `max-width` — адаптація від десктопа до мобільного.
+
+Зазвичай рекомендується `mobile-first` підхід з `min-width`.
+
+</details>
+
+<details>
+<summary>96. ???</summary>
 
 #### CSS
 
