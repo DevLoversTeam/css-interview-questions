@@ -4018,7 +4018,33 @@ grid-template-areas:
 </details>
 
 <details>
-<summary>89. ???</summary>
+<summary>89. Як розмістити елементи в сітці CSS Grid?</summary>
+
+#### CSS
+
+- Відповідь:
+
+Елементи розміщуються за допомогою властивостей:
+
+- grid-row, grid-column — для вказання позицій (наприклад, grid-column: 1 / 3)
+
+- grid-area — якщо використовується grid-template-areas
+
+Автоматично — якщо не задані координати, елементи розміщуються у вільні клітинки
+
+#### Приклад:
+
+```css
+.item {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+```
+
+</details>
+
+<details>
+<summary>90. ???</summary>
 
 #### CSS
 
