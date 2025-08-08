@@ -3971,14 +3971,12 @@ flex: 1 = flex-grow: 1; flex-shrink: 1; flex-basis: 0;
 </details>
 
 <details>
-<summary>87. ???</summary>
+<summary>87. Як у CSS Grid визначити кількість стовпців і рядків сітки?</summary>
 
 #### CSS
 
-- Як у CSS Grid визначити кількість стовпців і рядків сітки?
-
-Стовпці задаються через `grid-template-columns`, а рядки — через
-`grid-template-rows`.
+- Стовпці задаються через `grid-template-columns`, а рядки — через
+  `grid-template-rows`.
 
 #### Наприклад:
 
