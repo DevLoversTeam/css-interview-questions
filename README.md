@@ -4362,7 +4362,35 @@ grid-template-areas:
 </details>
 
 <details>
-<summary>99. ???</summary>
+<summary>99. Можете пояснити, як працює та використовується @keyframes у CSS?</summary>
+
+#### CSS
+
+- `@keyframes` визначає проміжні стани анімації в CSS.
+
+#### Синтаксис:
+
+```css
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.element {
+  animation: fadeIn 0.5s ease-in;
+}
+```
+
+- Використовується з властивістю `animation` для запуску анімації.
+
+</details>
+
+<details>
+<summary>100. ???</summary>
 
 #### CSS
 
