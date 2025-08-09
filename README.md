@@ -4238,7 +4238,49 @@ grid-template-areas:
 </details>
 
 <details>
-<summary>96. ???</summary>
+<summary>96. Як створити перехід CSS?</summary>
+
+#### CSS
+
+- Перехід у CSS (transition) дозволяє анімувати зміну властивостей елементів,
+  таких як колір, розмір чи положення, коли вони змінюються.
+
+#### Основний синтаксис:
+
+```css
+.element {
+  transition: property duration timing-function delay;
+}
+```
+
+#### Приклад:
+
+```css
+.element {
+  background-color: blue;
+  transition: background-color 0.3s ease;
+}
+
+.element:hover {
+  background-color: red;
+}
+```
+
+- У цьому прикладі, коли елемент отримує ховер, його колір плавно змінюється з
+  синього на червоний за 0.3 секунди.
+
+#### Пояснення:
+
+`background-color` — властивість, що анімується.
+
+`0.3s` — тривалість анімації.
+
+`ease` — функція часу для плавності.
+
+</details>
+
+<details>
+<summary>97. ???</summary>
 
 #### CSS
 
