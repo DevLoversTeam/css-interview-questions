@@ -4706,7 +4706,154 @@ button:focus-visible {
 </details>
 
 <details>
-<summary>116. ???</summary>
+<summary>116. Як застосовувати 3D-перетворення в CSS?</summary>
+
+#### CSS
+
+- В CSS 3D-перетворення застосовують через властивості:
+
+  - `transform: rotateX(), rotateY(), rotateZ()` — обертання по осях.
+
+  - `transform: translateZ()` — переміщення по Z-ось.
+
+  - `perspective` — задає глибину (перспективу) контейнеру.
+
+  - `transform-style: preserve-3d` — для вкладених елементів, щоб зберегти 3D
+    ефект.
+
+#### Приклад:
+
+```css
+.container {
+  perspective: 600px;
+}
+
+.element {
+  transform-style: preserve-3d;
+  transform: rotateY(45deg);
+}
+```
+
+</details>
+
+<details>
+<summary>117. Як працює і як використовувати властивість perspective у CSS?</summary>
+
+#### CSS
+
+- `perspective` задає відстань від глядача до площини елемента, створюючи ефект
+  глибини для 3D-перетворень.
+
+#### Синтаксис:
+
+```css
+.container {
+  perspective: 500px; /* менше значення — сильніша перспектива */
+}
+```
+
+- Властивість застосовується до батьківського елемента, а дочірні з transform із
+  3D-перетвореннями використовують цю перспективу.
+
+</details>
+
+<details>
+<summary>118. Що таке backface-visibility у CSS і як його використовувати?</summary>
+
+#### CSS
+
+- Видимість задньої поверхні (`backface-visibility`) — це CSS-властивість, яка
+  визначає, чи видно ли задню сторону елемента при його 3D-обертанні.
+
+  - `visible` — задня сторона показується (за замовчуванням).
+
+  - `hidden` — задня сторона прихована, не відображається при обертанні на 180°.
+
+#### Приклад:
+
+```css
+.element {
+  backface-visibility: hidden;
+}
+```
+
+</details>
+
+<details>
+<summary>119. Як зробити ефект перевернутої картки (card flip) на CSS?</summary>
+
+#### CSS
+
+- Створюють контейнер з двома сторонами (`front` і `back`), використовують
+  3D-перетворення і `backface-visibility: hidden`.
+
+#### Приклад:
+
+```css
+.container {
+  perspective: 1000px;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+```
+
+</details>
+
+<details>
+<summary>120. Які візуальні ефекти можна створити за допомогою CSS-фільтрів?</summary>
+
+#### CSS
+
+- CSS-фільтри дають змогу створювати ефекти:
+
+`blur()` — розмиття
+
+`brightness()` — яскравість
+
+`contrast()` — контраст
+
+`grayscale()` — відтінки сірого
+
+`invert()` — інверсія кольорів
+
+`sepia()` — сепія
+
+`saturate()` — насиченість
+
+`drop-shadow()` — тінь
+
+- Їх можна комбінувати через пробіл:
+
+```css
+filter: grayscale(50%) blur(2px);
+```
+
+</details>
+
+<details>
+<summary>121. ???</summary>
 
 #### CSS
 
