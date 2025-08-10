@@ -4548,7 +4548,7 @@ input:checked + label::before {
 </details>
 
 <details>
-<summary>108. Як можна стилізувати елемент <select> лише за допомогою CSS?</summary>
+<summary>108. Як можна стилізувати елемент select лише за допомогою CSS?</summary>
 
 #### CSS
 
