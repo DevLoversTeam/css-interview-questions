@@ -4498,7 +4498,116 @@ import styles from './Button.module.css';
 </details>
 
 <details>
-<summary>106. ???</summary>
+<summary>106. Як зробити, щоб кнопка виглядала як звичайне посилання?</summary>
+
+#### CSS
+
+- Просто прибрати стандартні стилі кнопки та застосувати стилі посилання:
+
+```css
+button {
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+```
+
+</details>
+
+<details>
+<summary>107. Як створити кастомні чекбокси та радіокнопки за допомогою CSS?</summary>
+
+#### CSS
+
+- Роблять прихований `<input type="checkbox/radio">` і стилізують його
+  пов’язаний `<label>` або псевдоелементи (`::before`, `::after`).
+- Стан `:checked` використовують для зміни стилю при виборі.
+
+#### Приклад:
+
+```css
+input[type='checkbox'] {
+  display: none;
+}
+
+label::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+input:checked + label::before {
+  background: #000;
+}
+```
+
+</details>
+
+<details>
+<summary>108. Як можна стилізувати елемент <select> лише за допомогою CSS?</summary>
+
+#### CSS
+
+- Використовують селектор `select` і його внутрішні елементи, але можливості
+  обмежені через нативний рендер браузера.
+
+#### Основні прийоми:
+
+`appearance: none;` / `-webkit-appearance: none;` — прибрати стандартну стрілку.
+
+Додати власну іконку через `background` або `::after` у контейнері.
+
+Стилізувати `option` (шрифт, колір, фон), але в різних браузерах підтримка
+різна.
+
+</details>
+
+<details>
+<summary>109. Яка найкраща практика для стилізації плейсхолдера у полі введення?</summary>
+
+#### CSS
+
+- Використовувати псевдоклас `::placeholder` для зміни стилю заповнювача,
+  зберігаючи достатній контраст і читабельність.
+
+#### Приклад:
+
+```css
+input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+```
+
+</details>
+
+<details>
+<summary>110. Як правильно реалізувати стилі фокуса для забезпечення доступності?</summary>
+
+#### CSS
+
+- Використовують псевдоклас `:focus` (і бажано `:focus-visible`) для чіткого
+  візуального індикатора.
+
+- Найкраща практика — не прибирати `outline`, а кастомізувати його:
+
+```css
+button:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+```
+
+- Це допомагає користувачам з клавіатурною навігацією.
+
+</details>
+
+<details>
+<summary>111. ???</summary>
 
 #### CSS
 
