@@ -5649,7 +5649,194 @@ function animate() {
 </details>
 
 <details>
-<summary>146. ???</summary>
+<summary>146. Як зробити гамбургер-меню лише на CSS?</summary>
+
+#### CSS
+
+- Створити гамбургер-меню на CSS можна так:
+
+1. Використати чекбокс (`<input type="checkbox">`) для контролю відкриття меню.
+
+2. Стилізувати три смужки як гамбургер через псевдоелементи.
+
+3. При відміченому чекбоксі через CSS (`:checked`) показувати/ховати меню.
+
+#### Простий приклад:
+
+```html
+<input type="checkbox" id="menu-toggle" />
+<label for="menu-toggle" class="hamburger">
+  <span></span><span></span><span></span>
+</label>
+<nav class="menu">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+</nav>
+```
+
+```css
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: black;
+  transition: 0.3s;
+}
+
+.menu {
+  display: none;
+}
+
+#menu-toggle:checked + .hamburger + .menu {
+  display: block;
+}
+```
+
+</details>
+
+<details>
+<summary>147. Як зробити слайдер або карусель лише на CSS?</summary>
+
+#### CSS
+
+- Карусель на чистому CSS роблять через:
+
+1. Використання `input type="radio"` або чекбоксів для керування слайдами.
+
+2. Приховані елементи-контролери (`radio buttons`), стилізовані як навігація.
+
+3. Позиціонування слайдів абсолютом в контейнері.
+
+4. Показ слайду через CSS-селектор `:checked` (наприклад, #slide1:checked ~
+   .slides .slide1 { opacity: 1; }).
+
+5. Анімації або переходи для плавності.
+
+#### Простий приклад:
+
+```html
+<input type="radio" name="slider" id="slide1" checked />
+<input type="radio" name="slider" id="slide2" />
+<div class="slides">
+  <div class="slide slide1">Slide 1</div>
+  <div class="slide slide2">Slide 2</div>
+</div>
+<label for="slide1">1</label>
+<label for="slide2">2</label>
+```
+
+```css
+.slides .slide {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease;
+}
+
+#slide1:checked ~ .slides .slide1,
+#slide2:checked ~ .slides .slide2 {
+  opacity: 1;
+  position: relative;
+}
+```
+
+</details>
+
+<details>
+<summary>148. Як реалізувати макет у стилі мура (masonry layout) за допомогою CSS?</summary>
+
+#### CSS
+
+- Щоб створити макет у стилі мура (masonry layout) на CSS, можна використовувати
+  кілька підходів:
+
+1. CSS Grid із властивістю grid-auto-rows та grid-row-end
+
+Потрібно вручну або через JS задавати висоту рядків, щоб елементи «заповнювали»
+вертикальний простір без фіксованої висоти.
+
+2. Використання CSS Columns (найпростіший спосіб)
+
+```css
+.container {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+```
+
+- Переваги: автоматичне «обтікання» елементів у колонки, але порядок читання
+  зліва направо, зверху вниз.
+
+3. Новий спосіб — grid-template-rows: masonry (поки експериментальний, підтримка
+   обмежена).
+
+- Підсумок:
+
+  - Для простих проектів — CSS Columns.
+
+  - Для складніших — поєднання Grid і JS для обчислення висот.
+
+</details>
+
+<details>
+<summary>149. Як застосувати CSS до вебзастосунку, який має друкуватися, а також відображатися на екрані?</summary>
+
+#### CSS
+
+- Для окремого стилювання під друк і екран використовують медіа-запити:
+
+```css
+/* Стилі для екрану */
+@media screen {
+  /* тут стилі для екрана */
+}
+
+/* Стилі для друку */
+@media print {
+  /* тут стилі для друку */
+}
+```
+
+- Також можна підключати окремі CSS-файли:
+
+```html
+<link rel="stylesheet" href="screen.css" media="screen" />
+<link rel="stylesheet" href="print.css" media="print" />
+```
+
+- Це дозволяє оптимізувати вигляд для кожного режиму — приховувати меню,
+  змінювати кольори, поліпшувати читабельність при друку.
+
+</details>
+
+<details>
+<summary>150. Як реалізувати безперебійний каскадний потік елементів у адаптивному дизайні?</summary>
+
+#### CSS
+
+- Щоб створити безперебійний каскадний потік (flow) елементів в адаптивному
+  дизайні, використовують:
+
+  - CSS Flexbox з властивістю flex-wrap: wrap; — елементи переходять на новий
+    рядок при браку місця.
+
+  - CSS Grid з автоматичним заповненням колонок (grid-template-columns:
+    repeat(auto-fill, minmax(200px, 1fr));).
+
+  - Media queries для корекції кількості елементів у рядку залежно від ширини
+    екрана.
+
+  - Використання відсоткових/гнучких ширин замість фіксованих пікселів.
+
+</details>
+
+<details>
+<summary>151. ???</summary>
 
 #### CSS
 
